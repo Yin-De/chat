@@ -12,7 +12,7 @@ app.use("/",route)
 const start=async()=>{
     try {
           await  connectdb()
-          console.log("connecteded");
+          console.log("connectede");
   // app.listen(5000,()=>{
     // console.log("port listening on 5000");
   // })  
@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://effervescent-sawine-d2c24c.netlify.app",
+      origin: "https://strong-moonbeam-aea009.netlify.app",
       credentials: true,
     },
 });
