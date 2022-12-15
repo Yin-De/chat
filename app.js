@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 const socket=require("socket.io")
 app.use("/",route)
-// app.use(cors());
+app.use(cors());
  
 const start=async()=>{
     try {
