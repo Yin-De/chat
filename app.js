@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://strong-moonbeam-aea009.netlify.app",
+      origin: "https://phenomenal-bavarois-e803c5.netlify.app",
       credentials: true,
     },
 });
