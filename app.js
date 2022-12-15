@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://chat-apps.onrender.com",
+      origin: "https://silly-puffpuff-3a4a48.netlify.app",
       credentials: true,
     },
 });
