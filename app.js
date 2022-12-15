@@ -2,7 +2,7 @@ const express=require("express")
 const connectdb=require("./db")
 const route=require('./Routes/route')
 const app=express()  
-// const cors = require("cors");
+ const cors = require("cors");
 app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 const socket=require("socket.io")
