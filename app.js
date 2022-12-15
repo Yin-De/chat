@@ -12,7 +12,7 @@ app.use("/",route)
 const start=async()=>{
     try {
           await  connectdb()
-          console.log("connected");
+          console.log("connecteded");
   // app.listen(5000,()=>{
     // console.log("port listening on 5000");
   // })  
