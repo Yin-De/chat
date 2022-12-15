@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://phenomenal-bavarois-e803c5.netlify.app",
+      origin: "https://golden-bunny-42a94a.netlify.app",
       credentials: true,
     },
 });
