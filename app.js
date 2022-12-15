@@ -12,7 +12,7 @@ app.use(cors());
 const start=async()=>{
     try {
           await  connectdb()
-          console.log("connectede");
+          console.log("connectededl");
   // app.listen(5000,()=>{
     // console.log("port listening on 5000");
   // })  
@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://golden-bunny-42a94a.netlify.app",
+      origin: "https://rainbow-arithmetic-8b3460.netlify.app",
       credentials: true,
     },
 });
