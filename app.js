@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://dancing-manatee-f94c7b.netlify.app",
+      origin: "https://chat-apps.onrender.com",
       credentials: true,
     },
 });
