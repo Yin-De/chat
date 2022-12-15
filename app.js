@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://silly-puffpuff-3a4a48.netlify.app",
+      origin: "https://effervescent-sawine-d2c24c.netlify.app",
       credentials: true,
     },
 });
