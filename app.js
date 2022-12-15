@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://dancing-manatee-f94c7b.netlify.app",
       credentials: true,
     },
 });
