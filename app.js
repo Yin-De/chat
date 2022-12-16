@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://rainbow-arithmetic-8b3460.netlify.app",
+      origin: "",
       credentials: true,
     },
 });
