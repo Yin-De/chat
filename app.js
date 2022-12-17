@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "",
+      origin: "https://chat-app-c4022.web.app",
       credentials: true,
     },
 });
