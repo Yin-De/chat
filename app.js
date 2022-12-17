@@ -7,11 +7,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 const socket=require("socket.io")
 app.use("/",route)
-app.use(cors({
-  origin:"https://luminous-mooncake-cd25a6.netlify.app",
-  methods:["GET","POST"]
-  
-}));
+app.use(cors());
  
 const start=async()=>{
     try {
@@ -30,12 +26,7 @@ start()
 // try {
   const io = socket(app.listen(5000,()=>{
     console.log("port listening on 5000");
-  })  , {
-    cors: {
-      origin: "https://luminous-mooncake-cd25a6.netlify.app",
-      credentials: true,
-    },
-});
+  }) );
 
 global.onlineUsers = new Map();
 io.on("connection", (socket) => {
