@@ -12,7 +12,7 @@ app.use(cors());
 const start=async()=>{
     try {
           await  connectdb()
-          console.log("connectededl");
+          console.log("connectedednew");
   // app.listen(5000,()=>{
     // console.log("port listening on 5000");
   // })  
