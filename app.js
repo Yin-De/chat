@@ -12,7 +12,7 @@ app.use(cors());
 const start=async()=>{
     try {
           await  connectdb()
-          console.log("connectedednew");
+          console.log("connectededne");
   // app.listen(5000,()=>{
     // console.log("port listening on 5000");
   // })  
@@ -28,7 +28,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "https://chat-app-c4022.firebaseapp.com",
+      origin: "https://luminous-mooncake-cd25a6.netlify.app",
       credentials: true,
     },
 });
