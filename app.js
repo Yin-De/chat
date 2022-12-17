@@ -7,7 +7,11 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 const socket=require("socket.io")
 app.use("/",route)
-app.use(cors());
+app.use(cors({
+  origin:"https://luminous-mooncake-cd25a6.netlify.app",
+  methods:["GET","POST"]
+  
+}));
  
 const start=async()=>{
     try {
