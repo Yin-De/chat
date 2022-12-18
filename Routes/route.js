@@ -3,7 +3,6 @@ const user=require("../Models/UserModel")
 const msg=require("../Models/MessageModel")
 const router=express.Router()
 const brcypt=require("bcrypt")
-const cors = require("cors");
 
 
 router.route("/register").post(async (req,res)=>{
@@ -40,7 +39,7 @@ try {
 }
 
 })
-router.route("/login").post(async cors(), (req,res)=>{
+router.route("/login").post(async (req,res)=>{
 try {
     const { username, password }=req.body
     const login= await user.findOne({username})
