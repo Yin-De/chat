@@ -7,12 +7,13 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 const socket=require("socket.io")
 app.use("/",route)
-app.use(cors());
- 
+app.use(cors({
+origin:"*"
+})); 
 const start=async()=>{
     try {
           await  connectdb()
-          console.log("connectededne");
+          console.log("connectedednela");
   // app.listen(5000,()=>{
     // console.log("port listening on 5000");
   // })  
