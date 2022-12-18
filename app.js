@@ -8,12 +8,16 @@ app.use(express.json());
 const socket=require("socket.io")
 app.use("/",route)
 app.use(cors({
-origin:"*"
+origin: true,
+  methods: ['POST'],
+  credentials: true,
+  maxAge: 3600,
+  enablePreflight: true
 })); 
 const start=async()=>{
     try {
           await  connectdb()
-          console.log("connectedednela");
+          console.log("connectedednelas");
   // app.listen(5000,()=>{
     // console.log("port listening on 5000");
   // })  
