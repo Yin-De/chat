@@ -8,7 +8,7 @@ app.use(express.json());
 const socket=require("socket.io")
 app.use("/",route)
 app.use(cors({
-origin: true,
+origin: "http://localhost:3000",
   methods: ['POST'],
   credentials: true,
   maxAge: 3600,
@@ -31,8 +31,13 @@ start()
 // try {
   const io = socket(app.listen(5000,()=>{
     console.log("port listening on 5000");
-  }) );
-
+  })  , {
+    cors: {
+      origin: "http://localhost:3000",
+      
+      credentials: true,
+    },
+});
 global.onlineUsers = new Map();
 io.on("connection", (socket) => {
   global.chatSocket = socket;
