@@ -8,7 +8,7 @@ app.use(express.json());
 const socket=require("socket.io")
 app.use("/",route)
 app.use(cors({
-origin: "http://localhost:3000",
+origin: "*",
   methods: ['POST'],
   credentials: true,
   maxAge: 3600,
@@ -33,7 +33,7 @@ start()
     console.log("port listening on 5000");
   })  , {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "*",
       
       credentials: true,
     },
