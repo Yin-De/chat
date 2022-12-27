@@ -9,12 +9,12 @@ const socket=require("socket.io")
 app.use("/",route)
 app.use(cors({
 origin: "*",
-  methods: ['POST'],
+  methods: ['POST,GET'],
   credentials: true,
   maxAge: 3600,
   enablePreflight: true
 })); 
-app.use(function(req, res, next) {
+app.use((req, res, next)=> {
     res.header('Access-Control-Allow-Origin', "*");
     res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
